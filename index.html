@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ebi Sushi - Premium Japanese Cuisine</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">EBI<span class="red">SUSHI</span></div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home">Home</a></li>
+                <li class="nav-item"><a href="#menu">Menu</a></li>
+                <li class="nav-item"><a href="#about">About</a></li>
+                <li class="nav-item"><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Authentic Japanese Sushi Experience</h1>
+            <p>Premium quality sushi crafted by master chefs</p>
+            <button class="cta-button">Order Now</button>
+        </div>
+    </section>
+
+    <section id="menu" class="menu-section">
+        <h2 class="section-title">Our Menu</h2>
+        <div class="menu-grid">
+            <!-- Menu items will be added here -->
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <h2 class="section-title">About Ebi Sushi</h2>
+            <p>Founded in 2020, Ebi Sushi brings authentic Japanese flavors...</p>
+            <img src="sushi-chef.jpg" alt="Sushi Chef">
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="contact-container">
+            <!-- Updated Contact Form -->
+<form class="contact-form">
+    <div class="form-group">
+        <input type="text" id="name" required placeholder=" ">
+        <label for="name">Full Name</label>
+    </div>
+    
+    <div class="form-group">
+        <input type="email" id="email" required placeholder=" ">
+        <label for="email">Email Address</label>
+    </div>
+    
+    <div class="form-group">
+        <textarea id="message" rows="5" required placeholder=" "></textarea>
+        <label for="message">Your Message</label>
+    </div>
+    
+    <button type="submit" class="cta-button">Send Message</button>
+</form>
+
+<!-- Updated Reservation Form -->
+<form class="reservation-form">
+    <div class="form-group">
+        <input type="text" id="res-name" required placeholder=" ">
+        <label for="res-name">Full Name</label>
+    </div>
+    
+    <div class="form-group">
+        <input type="date" id="date" required>
+        <label for="date">Date</label>
+    </div>
+    
+    <div class="form-group">
+        <select id="party-size" required>
+            <option value="" disabled selected>Select Party Size</option>
+            <option value="1">1 Person</option>
+            <option value="2">2 People</option>
+            <option value="3">3 People</option>
+            <option value="4">4 People</option>
+        </select>
+    </div>
+    
+    <div class="checkbox-group">
+        <input type="checkbox" id="terms">
+        <label for="terms">I agree to the terms and conditions</label>
+    </div>
+    
+    <button type="submit" class="cta-button">Make Reservation</button>
+</form>
+            <div class="contact-info">
+                <p><i class="fas fa-map-marker-alt red"></i> 123 Sushi Street, Tokyo</p>
+                <p><i class="fas fa-phone red"></i> +81 3-1234-5678</p>
+                <p><i class="fas fa-clock red"></i> Open Daily: 11AM - 10PM</p>
+            </div>
+        </div>
+    </section>
+<!-- Add these new sections after the menu section -->
+<section class="specials-section">
+    <div class="section-container">
+        <h2 class="section-title">Today's Specials</h2>
+        <div class="specials-grid" data-animation="slideUp"></div>
+    </div>
+</section>
+
+<section class="gallery-section">
+    <h2 class="section-title">Our Masterpieces</h2>
+    <div class="gallery-grid" data-animation="fadeIn">
+        <!-- Add 6-8 gallery images -->
+    </div>
+</section>
+
+<section class="testimonials-section">
+    <div class="section-container">
+        <h2 class="section-title">What People Say</h2>
+        <div class="testimonials-carousel" data-animation="slideUp"></div>
+    </div>
+</section>
+
+<section class="chefs-section">
+    <div class="section-container">
+        <h2 class="section-title">Meet Our Chefs</h2>
+        <div class="chefs-grid" data-animation="fadeIn"></div>
+    </div>
+</section>
+
+<section class="reservation-section">
+    <div class="section-container">
+        <h2 class="section-title">Make a Reservation</h2>
+        <form class="reservation-form" data-animation="scaleUp"></form>
+    </div>
+</section>
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>&copy; 2023 Ebi Sushi. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
